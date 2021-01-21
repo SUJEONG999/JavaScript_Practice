@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>배열 생성과 활용 실습</h1>
+<hr>
+<script>
+var a1 = new Array(10,5,7,21,4,8,18);
+var result = 0 ;
+for(var i in a1)
+    result += a1[i]
+    document.write("<h1>모든 원소의 합 : "+result+"</h1>");
+document.write("<ul>");
+var max = Math.max.apply(null, a1);
+document.write("<li>최대값 : "+max +"</li>");
+var min = Math.min.apply(null, a1);
+document.write("<li>최소값 : "+min +"</li>");
+document.write("</ul>");
+</script>
+</body>
+</html>
