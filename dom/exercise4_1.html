@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise4</title>
+</head>
+<body>
+<script>
+    var random = Math.floor(Math.random()*3+1);
+    const first = "http://localhost:8000/edu/first.html"
+    if(random == 1) {
+        var d = confirm("다음으로 이동하시겠습니까?")
+        if(d == true){
+            location.href = "https://www.daum.net/";
+        } else {
+            location.href = first;
+        }
+    }
+    if(random == 2) {
+        var n = confirm("네이버로 이동하시겠습니까?")
+        if(n == true){
+            location.href = "https://www.naver.com/";
+        } else {
+            location.href = first;
+        }
+    }
+    if(random == 3) {
+        var n = confirm("구글로 이동하시겠습니까?")
+        if(n == true){
+            location.href = "https://www.google.com/";
+        } else {
+            location.href = first;
+        }
+    }
+</script>
+</body>
+</html>
